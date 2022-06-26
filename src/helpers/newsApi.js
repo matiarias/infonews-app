@@ -1,4 +1,4 @@
-export const getNews = async (category) => {
+export const newsApi = async (category) => {
   const resp = await fetch(
     `https://newsapi.org/v2/top-headlines?country=ar&category=${category}&apiKey=d29f8cdd6aeb4282a787fbcc94fdc480`
   );

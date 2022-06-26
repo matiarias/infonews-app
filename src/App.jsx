@@ -1,5 +1,6 @@
 import React from "react";
 import Titulo from "./components/titulo/Titulo";
+import Formulario from "./components/formulario/Formulario";
 import ListadoNoticias from "./components/listadoNoticias/ListadoNoticias";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <>
       <Titulo />
+      <Formulario />
       <ListadoNoticias />
     </>
   );
