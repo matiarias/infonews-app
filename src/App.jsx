@@ -1,7 +1,7 @@
 import React from "react";
-import Titulo from "./components/titulo/Titulo";
-import Formulario from "./components/formulario/Formulario";
-import ListadoNoticias from "./components/listadoNoticias/ListadoNoticias";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import NoticiaAmpliada from "./pages/NoticiaAmpliada";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
@@ -11,9 +11,12 @@ import "./css/app.css";
 const App = () => {
   return (
     <>
-      <Titulo />
-      <Formulario />
-      <ListadoNoticias />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/noticia" element={<NoticiaAmpliada />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
